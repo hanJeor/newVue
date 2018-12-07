@@ -3,11 +3,15 @@
 import Vue from 'vue'
 import App from './App'
 import router from './router'
-
+import fastClick from 'fastclick'
+// 重置样式
 import './assets/style/reset.css'
-
+// 解决边框一像素问题
+import './assets/style/border.css'
+// icon 图标库
+import './assets/style/iconfont.css'
 Vue.config.productionTip = false
-
+fastClick.attach(document.body)
 /* eslint-disable no-new */
 new Vue({
   el: '#app',
